@@ -32,5 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        TextView adminlogin = findViewById(R.id.adminlogin);
+        adminlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
+                startActivity(intent);
+            }
+        });
     }
 }
