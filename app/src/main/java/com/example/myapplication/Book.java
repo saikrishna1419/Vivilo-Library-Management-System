@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
+
     private String title, type;
-    private int available = 0, id;
+    private int total =0, available = 0, id;
     private List<Integer> unit = new ArrayList<Integer>();
 
 
@@ -15,6 +16,7 @@ public class Book {
     public Book(String title, String type, int total, int id) {
         this.title = title;
         this.type = type;
+        this.total = total;
         this.id = id;
         this.available=total;
     }
@@ -26,6 +28,14 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 
     public String getType() {
