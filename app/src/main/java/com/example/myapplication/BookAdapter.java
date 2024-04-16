@@ -17,7 +17,7 @@ public class BookAdapter extends FirestoreRecyclerAdapter<Book, BookAdapter.Book
     private String key;
     private int mode;
 
-    public BookAdapter(@NonNull FirestoreRecyclerOptions options,String key,int mode) {
+    public BookAdapter(@NonNull FirestoreRecyclerOptions options, String key, int mode) {
         super(options);
         this.key=key;
         this.mode=mode;

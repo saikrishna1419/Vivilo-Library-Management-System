@@ -5,9 +5,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.widget.EditText;
+
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -15,10 +14,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -68,7 +64,7 @@ public class UserSeeMyBooks extends AppCompatActivity {
         showBook();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getParent()));
-        adapter = new MyBookAdapter(myBooks);
+        adapter = new BookAdapter(myBooks);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
     }
