@@ -52,7 +52,7 @@ public class Return extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_return);
+        setContentView(R.layout.activity_return_book);
         FirebaseApp.initializeApp(this);
         returnButton = (Button) findViewById(R.id.returnButton);
         editBid4 = (TextInputLayout) findViewById(R.id.editBid4);
