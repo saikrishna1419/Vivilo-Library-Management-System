@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "279932455901",
+    "project_id": "vivilo-4504b",
+    "storage_bucket": "vivilo-4504b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279932455901:android:e8d959dca162f614f68434",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVvdI6NxHc97JODUwnR0kK94b8sL5s7IE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
