@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText emailET;
     EditText passwordET;
     Button loginBTN;
+    TextView adminTV;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         emailET = findViewById(R.id.UserNameET);
         passwordET = findViewById(R.id.passwordPW);
         loginBTN = findViewById(R.id.loginBTN);
+        adminTV = findViewById(R.id.adminlogin);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -44,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        adminTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
+                startActivity(intent);
+            }
+        });
 
         TextView toSignUp = findViewById(R.id.toSignUp);
         toSignUp.setOnClickListener(new View.OnClickListener() {
@@ -54,19 +63,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        TextView adminlogin = findViewById(R.id.adminlogin);
-        adminlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
-                startActivity(intent);
-            }
-        });
-
     }
-
-    private void signIn(String email, String password) {
+    private void signIn (String email, String password){
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -87,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
 }

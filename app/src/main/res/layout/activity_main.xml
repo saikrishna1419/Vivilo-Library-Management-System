@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    TextView adminlogin = findViewById(R.id.adminlogin);
-    adminlogin.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-    Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
-    startActivity(intent);
-    }
-    });
-
-
-
     <TextView
         android:id="@+id/userLoginTV"
         android:layout_width="0dp"
@@ -53,10 +42,10 @@
 
     <EditText
         android:id="@+id/UserNameET"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
@@ -68,9 +57,10 @@
 
     <EditText
         android:id="@+id/passwordPW"
-        android:layout_width="408dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
