@@ -7,7 +7,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/Vivilo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
@@ -27,11 +27,9 @@
         <activity
             android:name=".Book"
             android:exported="false" />
+
         <activity
-            android:name=".addBook"
-            android:exported="false" />
-        <activity
-            android:name=".Return_Book"
+            android:name=".Return"
             android:exported="false" />
         <activity
             android:name=".RemoveBook"
